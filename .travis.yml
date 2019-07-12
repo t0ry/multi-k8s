@@ -18,7 +18,7 @@ before-install:
  - docker build -t tory00b/react-test -f ./client/Dockerfile.dev ./client
 
 script:
- - docker run tory00b/react-test npm run test -- --coverage
+ - docker run tory00b/react-test npm test -- --coverage4
 
 deploy:
  provider: script
